@@ -63,7 +63,7 @@ function History() {
                         }
                         </>
                         :
-                        <div className="card">No Result Found</div>
+                        <div className="card" style={{textAlign:'center'}}>No Result Found</div>
                     }
                     </>
                     :
