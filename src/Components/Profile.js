@@ -1,11 +1,10 @@
 import React,{useEffect,useState} from 'react'
-import {useParams,useHistory} from 'react-router-dom'
+import {useParams} from 'react-router-dom'
 import Navbar from './Navbar'
 import TransferMoneyForm from './TransferMoneyForm'
 const Backen_URL='http://localhost:5000'
 function Profile() {
     const {id}=useParams()
-    // const history=useHistory()
     const [Data,setData]=useState({})
     console.log(id)
     useEffect(()=>{
