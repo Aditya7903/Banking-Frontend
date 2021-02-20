@@ -24,7 +24,7 @@ function History() {
         <>
            <Navbar/> 
            <br/>
-           <h1 style={{color:'#fff',textAlign:'center',overflow:'hidden'}}>Transaction History</h1>
+           <h1 style={{color:'#000',textAlign:'center',overflow:'hidden'}}>Transaction History</h1>
            <table class="table">
             <thead>
                 <tr>

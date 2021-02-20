@@ -1,6 +1,7 @@
 import React ,{useEffect,useState}from 'react'
 import Navbar from './Navbar';
 import {Link} from 'react-router-dom'
+
 function CustomerList() {
     const [data,setData]=useState([])
     useEffect(()=>{
@@ -24,8 +25,12 @@ function CustomerList() {
     return (
         <>
         <Navbar/>
+        
+        
         <div className="container">
-            <h1 style={{color:'#fff',textAlign:'center',margin:'10px',overflow:'hidden'}}>All Customers</h1>
+        
+        
+                   <h1 style={{color:'#000',textAlign:'center',margin:'10px',overflow:'hidden'}}>All Customers</h1>
             <table class="table">
             <thead>
                 <tr>
@@ -56,7 +61,9 @@ function CustomerList() {
             }    
             </tbody>
             </table>
+            
         </div>
+     
     </>
     )
 }

@@ -1,11 +1,10 @@
 import React,{useEffect,useState} from 'react'
-import {useParams,useHistory} from 'react-router-dom'
+import {useParams} from 'react-router-dom'
 import Navbar from './Navbar'
 import TransferMoneyForm from './TransferMoneyForm'
 const Backen_URL='http://localhost:5000'
 function Profile() {
     const {id}=useParams()
-    // const history=useHistory()
     const [Data,setData]=useState({})
     console.log(id)
     useEffect(()=>{
@@ -23,13 +22,13 @@ function Profile() {
            }
            )
        .catch(error => console.log('error', error));
-    },[])
+    },[id])
     return (
         <>
           <Navbar/>
           <br/>  
           <div className="container" style={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
-              <h1 style={{color:'#fff',textAlign:'center',overflow:'hidden'}}>Customer's Profile</h1>
+              <h1 style={{color:'#000',textAlign:'center',overflow:'hidden'}}>Customer's Profile</h1>
               <div className="card" style={{display:'flex',flexDirection:'column',justifyContent:'center',width:'500px'}}>
                     <div className="cust_wrapper">
                         <div>Name</div>
@@ -44,11 +43,7 @@ function Profile() {
                         <div>Rs. {Data.balance}</div>
                     </div>
               </div>
-              <div style={{display:'flex',justifyContent:'center',margin:'10px'}}>
-              <button className="btn btn-warning">
-                  Transfer Money
-              </button>
-              </div>
+             
               <div className="">
                   <TransferMoneyForm
                     senderName={Data.name}

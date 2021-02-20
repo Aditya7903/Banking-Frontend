@@ -86,7 +86,7 @@ function TransferMoneyForm({senderName,senderEmail}) {
         <h4 style={{color:'#fff',overflow:'hidden'}}>{Message}</h4>
         <form onSubmit={SubmitHandlers}>
         <div class="form-group">
-            <label htmlFfor="email">Receiver's Email</label>
+            <label htmlFfor="email"><b style ={{color:'#000'}}>Receiver's Email</b></label>
             <select class="form-control" id="email" value={Email} onChange={(e)=>FindName(e.target.value)}>
                 <option>Select an email</option>
             {
@@ -106,14 +106,14 @@ function TransferMoneyForm({senderName,senderEmail}) {
             </select>
         </div>
         <div class="form-group">
-            <label htmlFor="name">Receiver's Name</label>
+            <label htmlFor="name"><b style ={{color:'#000'}}>Receiver's Name</b></label>
             <input type="text" class="form-control" id="name" placeholder="Reciever's Name" value={Name} disabled/>
         </div>
         <div class="form-group">
-            <label htmlFor="amount">Amount</label>
+            <label htmlFor="amount"><b style ={{color:'#000'}}>Amount</b></label>
             <input type="number" class="form-control" id="amount" placeholder="Amount to be tansferred" value={Amount} onChange={(e)=>setAmount(e.target.value)}/>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Send</button>
         </form>
     </>
     )
