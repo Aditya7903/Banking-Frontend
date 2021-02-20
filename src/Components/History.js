@@ -1,6 +1,6 @@
 import React ,{useState,useEffect}from 'react'
 import Navbar from './Navbar';
-const Backend_URL='http://localhost:5000'
+const Backend_URL='https://basicbankingapi.herokuapp.com'
 function History() {
     const [Data,setData]=useState(undefined)
     useEffect(()=>{
@@ -63,11 +63,16 @@ function History() {
                         }
                         </>
                         :
-                        <div className="card" style={{textAlign:'center'}}>No Result Found</div>
+                        <tr
+                        >
+                        <td colSpan="7" style={{textAlign:'center',fontSize:'550'}} >No Transaction History {':('}</td>
+                        </tr>
                     }
                     </>
                     :
-                    <div>Loading....</div>
+                    <tr>
+                        <td colSpan="7" style={{textAlign:'center',fontSize:'550'}} >Loading....</td>
+                    </tr>
                 }
             </tbody>
             </table>

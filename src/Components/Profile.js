@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react'
 import {useParams} from 'react-router-dom'
 import Navbar from './Navbar'
 import TransferMoneyForm from './TransferMoneyForm'
-const Backen_URL='http://localhost:5000'
+const Backen_URL='https://basicbankingapi.herokuapp.com'
 function Profile() {
     const {id}=useParams()
     const [Data,setData]=useState({})

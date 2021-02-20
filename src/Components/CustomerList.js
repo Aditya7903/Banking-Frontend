@@ -11,7 +11,7 @@ function CustomerList() {
             redirect: 'follow'
           };
           
-          fetch("http://localhost:5000/customers", requestOptions)
+          fetch("https://basicbankingapi.herokuapp.com/customers", requestOptions)
             .then(response => response.json())
             .then(result => 
                 {
