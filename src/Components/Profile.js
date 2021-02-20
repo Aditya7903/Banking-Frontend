@@ -22,13 +22,13 @@ function Profile() {
            }
            )
        .catch(error => console.log('error', error));
-    },[])
+    },[id])
     return (
         <>
           <Navbar/>
           <br/>  
           <div className="container" style={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
-              <h1 style={{color:'#fff',textAlign:'center',overflow:'hidden'}}>Customer's Profile</h1>
+              <h1 style={{color:'#000',textAlign:'center',overflow:'hidden'}}>Customer's Profile</h1>
               <div className="card" style={{display:'flex',flexDirection:'column',justifyContent:'center',width:'500px'}}>
                     <div className="cust_wrapper">
                         <div>Name</div>
@@ -44,9 +44,9 @@ function Profile() {
                     </div>
               </div>
               <div style={{display:'flex',justifyContent:'center',margin:'10px'}}>
-              <button className="btn btn-warning">
+              <h3>
                   Transfer Money
-              </button>
+              </h3>
               </div>
               <div className="">
                   <TransferMoneyForm

@@ -113,7 +113,7 @@ function TransferMoneyForm({senderName,senderEmail}) {
             <label htmlFor="amount">Amount</label>
             <input type="number" class="form-control" id="amount" placeholder="Amount to be tansferred" value={Amount} onChange={(e)=>setAmount(e.target.value)}/>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Send</button>
         </form>
     </>
     )
