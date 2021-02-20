@@ -2,11 +2,12 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 function Carousel() {
     var settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 100,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows:true,
@@ -15,19 +16,19 @@ function Carousel() {
     return (
         <Slider {...settings}>
         <div >
-            <div style={{height:'300px',background:'red',display:'flex',justifyContent:'center',alignItems:'center'}}>
-                <h3>Slide 1</h3>
-            </div>
+            
+                <img src= "/images/bg.jpg" height="300px" weidth="1000px" />
+           
+        </div>
+        <div  >
+            
+        <img src= "/images/bg.jpg"  alt=""/>  
+        
         </div>
         <div >
-            <div style={{height:'300px',background:'orange',display:'flex',justifyContent:'center',alignItems:'center'}}>
-                <h3>Slide 1</h3>
-            </div>
-        </div>
-        <div >
-            <div style={{height:'300px',background:'yellow',display:'flex',justifyContent:'center',alignItems:'center'}}>
-                <h3>Slide 1</h3>
-            </div>
+            
+        <img src= "/images/bg.jpg" alt=""/>
+    
         </div>
     </Slider>
     )

@@ -21,3 +21,11 @@
     justify-content: space-between;
     font-size: 20px;
 }
+img{
+    
+   /* height:'300px';
+    display:'flex';
+    justify-content:'center';
+    align-items:'center';*/
+    background-size: auto;
+}
